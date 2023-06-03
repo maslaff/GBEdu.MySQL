@@ -1,3 +1,5 @@
+-- 3zahj5nac
+
 CREATE TABLE SALESPEOPLE (
   snum INTEGER PRIMARY KEY,
   sname TEXT NOT NULL,
