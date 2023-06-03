@@ -1,3 +1,5 @@
+-- 3zahq28n6
+
 CREATE TABLE workers (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(50) NOT NULL,
