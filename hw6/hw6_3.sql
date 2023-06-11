@@ -1,0 +1,19 @@
+CREATE TEMPORARY TABLE results
+(
+	num int
+);
+
+DROP PROCEDURE IF EXISTS twos;
+DELIMITER //
+CREATE PROCEDURE twos ()
+BEGIN
+	DECLARE i INT DEFAULT 0;
+--     DECLARE res VARCHAR(120) DEFAULT '';
+	WHILE i < 10 DO
+	SET i = i + 2;
+    INSERT INTO results (num) VALUES (i);
+--     SET RES=CONCAT(RES, i, ', ');
+	END WHILE;
+	SELECT * FROM results;
+END//
+CALL twos//
